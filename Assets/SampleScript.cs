@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SampleScript : MonoBehaviour
 {
-    private int spinSpeed = 160;
+    private int spinSpeed = 500;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class SampleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
+        transform.Rotate(spinSpeed * Time.deltaTime , spinSpeed * Time.deltaTime, spinSpeed * Time.deltaTime);
     }
 }
